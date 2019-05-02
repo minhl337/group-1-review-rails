@@ -1,0 +1,7 @@
+<h1><%= @user.name %></h1>
+
+<%= form_for @user, method: :delete do |f| %>
+<%= f.submit "Delete User" %>
+<% end %>
+
+<%= button_to "delete user", user_path(@user), method: :delete %>
